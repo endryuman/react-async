@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-async/static/css/main.7acaea2f.css",
+    "main.js": "/react-async/static/js/main.79525bac.js",
+    "index.html": "/react-async/index.html",
+    "main.7acaea2f.css.map": "/react-async/static/css/main.7acaea2f.css.map",
+    "main.79525bac.js.map": "/react-async/static/js/main.79525bac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.79525bac.js"
+  ]
+}
