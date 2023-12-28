@@ -5,7 +5,7 @@ import {
 } from '../../redux/users/selectors';
 import { useEffect, useState } from 'react';
 import { fetchUser } from '../../redux/users/operations';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Modal } from '../../components/Modal/Modal';
 
 export const UserDetailsPage = () => {
@@ -33,7 +33,8 @@ export const UserDetailsPage = () => {
           <p>{user.phone}</p>
           <p>{user.city}</p>
           <button onClick={handleModal}>Delete User</button>
-          {isModalShown && <Modal handleClouse={handleClouse} />}
+          <Link to="update">Update User</Link>
+          {isModalShown && <Modal id={id} handleClouse={handleClouse} />}
         </>
       )}
     </>

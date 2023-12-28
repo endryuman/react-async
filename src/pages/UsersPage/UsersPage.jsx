@@ -11,7 +11,7 @@ export const UsersPage = () => {
   useEffect(() => {
     dispatch(fetchUsers(selectUsers));
   }, [dispatch]);
-
+  console.log('------', users);
   return (
     <>
       {isLoading && <p>Loading...</p>}
@@ -22,6 +22,7 @@ export const UsersPage = () => {
           </li>
         ))}
       </ul>
+      <Link to="add">Add User</Link>
     </>
   );
 };
